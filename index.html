@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>AlchemyGPT</title>
 <link rel="icon" type="image/png" href="alchGPT_logo_main.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#7ac943">
+
 
 <style>
 html, body {
@@ -351,6 +354,13 @@ document.getElementById("themeToggle").onclick = ()=>{
 
 renderElements();
 </script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
 </body>
 </html>
+
 
